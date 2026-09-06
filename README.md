@@ -35,7 +35,7 @@ This project focuses on detecting fraudulent credit card transactions using a su
 - **K-Nearest Neighbor (KNN)**:
   - Distance-based classification
   - Sensitive to class imbalance and feature scaling
-  - Hyperparameter tuning with K value optimization
+  - KNN classifier with K=5
 
 ---
 
@@ -47,22 +47,21 @@ This project focuses on detecting fraudulent credit card transactions using a su
 
 2. **Preprocessing**:
    - Feature scaling using `StandardScaler`
-   - Train-test split with stratification
+   - Train-test split using a 70:30 ratio
 
 3. **Model Training**:
    - Implemented KNN classifier with optimal K value
-   - Evaluated with accuracy, precision, recall, and F1-score
+   - Evaluated with accuracy, precision, recall and F1-score
 
 4. **Model Evaluation**:
    - Confusion matrix
-   - ROC-AUC score
-   - Precision-recall trade-offs
+   - Accuracy, precision, recall and F1-score
 
 ---
 
 ## 📈 Results
 
-- The KNN model achieves good performance with careful handling of class imbalance and proper feature scaling.
+- The KNN model was evaluated using accuracy, precision, recall, F1-score and a confusion matrix after feature scaling.
 - **Note**: Since the dataset is highly imbalanced, accuracy alone is not a reliable metric.
 
 ---
